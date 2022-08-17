@@ -21,7 +21,8 @@ public class FruitsEndpointTest {
                 .body(
                         containsString("Cherry"),
                         containsString("Apple"),
-                        containsString("Banana"));
+                        containsString("Banana"),
+                        containsString("Berries"));
 
         //Delete the Cherry:
         given()
