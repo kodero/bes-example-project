@@ -65,6 +65,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.deltapay.common</groupId>
+            <artifactId>model</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.jboss.logmanager</groupId>
             <artifactId>log4j2-jboss-logmanager</artifactId>
         </dependency>

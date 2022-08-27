@@ -8,16 +8,15 @@ import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.annotations.Filter;
 
+import com.corvid.bes.callbacks.EntityCallbackClass;
 import com.corvid.bes.model.AbstractModelBase;
 import com.corvid.bes.validation.ValidateAt;
 import com.corvid.bes.validation.ValidationMethod;
 
-import io.quarkus.runtime.annotations.RegisterForReflection;
-
 @Entity
 @Table(name = "id_types")
 @Filter(name = "filterByDeleted")
-@RegisterForReflection
+@EntityCallbackClass(IDTypeCallback.class)
 public class IDType extends AbstractModelBase{
 
     @NotEmpty

@@ -6,13 +6,13 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.Filter;
 
-import com.corvid.bes.model.AbstractModelBase;
+import com.deltapay.common.DeltapayModelBase;
 
 @Entity
 @Table(name = "balls")
 @Filter(name = "filterByDeleted")
 //@EntityCallbackClass(BallCallback.class)
-public class Ball extends AbstractModelBase{
+public class Ball extends DeltapayModelBase{
 
     public enum Size{SMALL,MEDIUM,LARGE}
 
